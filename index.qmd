@@ -26,10 +26,8 @@ library("tidyverse")
 library("dplyr")
 library("ggplot2")
 library(MASS)
-install.packages("plotly")
 library(plotly)
 library(htmlwidgets)
-install.packages("ggthemes")
 library(ggthemes)
 ```
 
@@ -63,7 +61,7 @@ media_plot <- media_plot + labs(title="Sales Performance by Campaign Type",
                                 subtitle=strwrap(paste0("Campaigns based on targeting criteria and placement. Return on Ad Spend calculated as Sales / Media Spend.")))
 ```
 
-##  Dynamic Features Added
+## Dynamic Features Added
 
 A click selector and range toggle were added. The click selector utilizes the legend to remove campaigns types from the visual. This easily allows comparison of 2 or 3 of the campaign types. This also allows dynamic ability for only 1 of the campaign types to be visible at a time. The range toggle allows users to zoom in on the graph. This is helpful when selecting a campaign type that is very concentrated in one area. The user can adjust the zoom then select only one of the campaign types and easily see the trend. This function is required when campaign types are on opposite ends of the scale.
 
